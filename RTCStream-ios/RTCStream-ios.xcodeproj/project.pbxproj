@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DBD7F819CF16DC0BC15F970 /* Pods_RTCEngine_osx_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B9C70F9C679E128D935C9 /* Pods_RTCEngine_osx_app.framework */; };
+		B05B88A3224B8ED400C3D4E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B05B88A2224B8ED400C3D4E6 /* AppDelegate.m */; };
+		B05B88A6224B8ED400C3D4E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05B88A5224B8ED400C3D4E6 /* ViewController.m */; };
+		B05B88A9224B8ED400C3D4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05B88A7224B8ED400C3D4E6 /* Main.storyboard */; };
+		B05B88AB224B8ED500C3D4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05B88AA224B8ED500C3D4E6 /* Assets.xcassets */; };
+		B05B88AE224B8ED500C3D4E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05B88AC224B8ED500C3D4E6 /* LaunchScreen.storyboard */; };
+		B05B88B1224B8ED500C3D4E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B05B88B0224B8ED500C3D4E6 /* main.m */; };
+		B05B88D6224B995000C3D4E6 /* RTCEngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05B88D5224B995000C3D4E6 /* RTCEngineViewController.m */; };
+		B05B88D8224BADE500C3D4E6 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88D7224BADE400C3D4E6 /* libresolv.tbd */; };
+		B05B88DA224BADFB00C3D4E6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88D9224BADFB00C3D4E6 /* libc++.tbd */; };
+		B05B88DC224BAE1000C3D4E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88DB224BAE1000C3D4E6 /* AVFoundation.framework */; };
+		B05B88DE224BAE2300C3D4E6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88DD224BAE2300C3D4E6 /* CoreTelephony.framework */; };
+		B05B88E0224BAE2F00C3D4E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88DF224BAE2F00C3D4E6 /* AudioToolbox.framework */; };
+		B05B88E2224BAE3800C3D4E6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88E1224BAE3800C3D4E6 /* VideoToolbox.framework */; };
+		B05B88E4224BAE4300C3D4E6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88E3224BAE4300C3D4E6 /* CoreMedia.framework */; };
+		B05B88E6224BAE5500C3D4E6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88E5224BAE5500C3D4E6 /* Accelerate.framework */; };
+		B05B88E8224BAE6400C3D4E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B88E7224BAE6400C3D4E6 /* SystemConfiguration.framework */; };
+		B05B88FA224CD1E000C3D4E6 /* YUVMediaDataRender.m in Sources */ = {isa = PBXBuildFile; fileRef = B05B88F9224CD1E000C3D4E6 /* YUVMediaDataRender.m */; };
+		B060EB7F225F36F6000C2233 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B060EB7E225F36F6000C2233 /* CoreDataManager.m */; };
+		B060EB80225F36F6000C2233 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B060EB7E225F36F6000C2233 /* CoreDataManager.m */; };
+		B0766C85225B58E400D32070 /* VCVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0766C84225B58E400D32070 /* VCVideoCapturer.m */; };
+		B0766C88225C5D2700D32070 /* OpenCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B0766C87225C5D2700D32070 /* OpenCamera.m */; };
+		B0E2C64222689C10002266C7 /* rtcengine.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B0E2C64122689C10002266C7 /* rtcengine.podspec */; };
+		B0E2C64422689C1E002266C7 /* rtcengine_osx.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B0E2C64322689C1E002266C7 /* rtcengine_osx.podspec */; };
+		B0E2C64B226966BC002266C7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0E2C64A226966BC002266C7 /* README.md */; };
+		B0E56256224DC0F100F518C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E56255224DC0F100F518C2 /* AppDelegate.m */; };
+		B0E56259224DC0F100F518C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E56258224DC0F100F518C2 /* ViewController.m */; };
+		B0E5625B224DC0F200F518C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E5625A224DC0F200F518C2 /* Assets.xcassets */; };
+		B0E5625E224DC0F200F518C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E5625C224DC0F200F518C2 /* Main.storyboard */; };
+		B0E56261224DC0F200F518C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E56260224DC0F200F518C2 /* main.m */; };
+		B0E5628B224DEDCF00F518C2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E5628A224DEDCF00F518C2 /* libresolv.tbd */; };
+		B0E5628C224DEDDB00F518C2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E3FC6A2244AD7200364FFA /* libc++.tbd */; };
+		B0E5628E224DEDE500F518C2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E5628D224DEDE500F518C2 /* Accelerate.framework */; };
+		B0E56290224DEDF000F518C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E5628F224DEDEF00F518C2 /* SystemConfiguration.framework */; };
+		B0E56292224DEDFB00F518C2 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E56291224DEDFB00F518C2 /* CoreWLAN.framework */; };
+		B0E56294224DEE0900F518C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E56293224DEE0900F518C2 /* Foundation.framework */; };
+		B0E56296224DEE1900F518C2 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E56295224DEE1900F518C2 /* CoreAudio.framework */; };
+		B0E56298224DEE2300F518C2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E56297224DEE2300F518C2 /* CoreMedia.framework */; };
+		B0E5629A224DEE3D00F518C2 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E56299224DEE3D00F518C2 /* VideoToolbox.framework */; };
+		B0E5629C224DEE6100F518C2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E5629B224DEE6100F518C2 /* AudioToolbox.framework */; };
+		B0E5629E224DEE6D00F518C2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E5629D224DEE6D00F518C2 /* CFNetwork.framework */; };
+		B0E562A0224DEE7600F518C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E5629F224DEE7600F518C2 /* CoreGraphics.framework */; };
+		B0E562A2224DEE8000F518C2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E562A1224DEE8000F518C2 /* CoreVideo.framework */; };
+		B0E562A6224DF73100F518C2 /* RTCShownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E562A4224DF73100F518C2 /* RTCShownViewController.m */; };
+		B0E562A7224DF73100F518C2 /* RTCShownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E562A5224DF73100F518C2 /* RTCShownViewController.xib */; };
+		D8F2DB1E9B309C9FD8FD6376 /* Pods_RTCEngine_ios_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CD33725C02B98E1E6B529E /* Pods_RTCEngine_ios_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		023E0565A8E40DB3911550A9 /* Pods_RTCStream_osx_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCStream_osx_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EDA72B4CA2DFE4A244BF43 /* Pods_RTCSTream_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCSTream_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CD33725C02B98E1E6B529E /* Pods_RTCEngine_ios_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCEngine_ios_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		472ABDEC58C4DA38DC009C50 /* Pods-RTCEngine-ios-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCEngine-ios-app.release.xcconfig"; path = "Target Support Files/Pods-RTCEngine-ios-app/Pods-RTCEngine-ios-app.release.xcconfig"; sourceTree = "<group>"; };
+		68BAA6F060003651865681EB /* Pods_RTCStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A388292EBFC8D80BB7AAAA0 /* Pods-RTCEngine-osx-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCEngine-osx-app.release.xcconfig"; path = "Target Support Files/Pods-RTCEngine-osx-app/Pods-RTCEngine-osx-app.release.xcconfig"; sourceTree = "<group>"; };
+		6F118FB7ACBD6A719A0A3449 /* Pods_RTCStreamOsx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCStreamOsx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71AF3223C53C5C427C893573 /* Pods-RTCEngine-osx-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCEngine-osx-app.debug.xcconfig"; path = "Target Support Files/Pods-RTCEngine-osx-app/Pods-RTCEngine-osx-app.debug.xcconfig"; sourceTree = "<group>"; };
+		763B9C70F9C679E128D935C9 /* Pods_RTCEngine_osx_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCEngine_osx_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834A0FB8403F330221944ED7 /* Pods_RTCEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A279333C47CC377E0C8DB6E8 /* Pods-RTCEngine-ios-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTCEngine-ios-app.debug.xcconfig"; path = "Target Support Files/Pods-RTCEngine-ios-app/Pods-RTCEngine-ios-app.debug.xcconfig"; sourceTree = "<group>"; };
+		B05B889F224B8ED400C3D4E6 /* RTCEngine-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTCEngine-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05B88A1224B8ED400C3D4E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B05B88A2224B8ED400C3D4E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B05B88A4224B8ED400C3D4E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B05B88A5224B8ED400C3D4E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B05B88A8224B8ED400C3D4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B05B88AA224B8ED500C3D4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B05B88AD224B8ED500C3D4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B05B88AF224B8ED500C3D4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B05B88B0224B8ED500C3D4E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B05B88B6224B8ED500C3D4E6 /* RTCEngine-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RTCEngine-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05B88D4224B995000C3D4E6 /* RTCEngineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCEngineViewController.h; sourceTree = "<group>"; };
+		B05B88D5224B995000C3D4E6 /* RTCEngineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCEngineViewController.m; sourceTree = "<group>"; };
+		B05B88D7224BADE400C3D4E6 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B05B88D9224BADFB00C3D4E6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B05B88DB224BAE1000C3D4E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B05B88DD224BAE2300C3D4E6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B05B88DF224BAE2F00C3D4E6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B05B88E1224BAE3800C3D4E6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B05B88E3224BAE4300C3D4E6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B05B88E5224BAE5500C3D4E6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B05B88E7224BAE6400C3D4E6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B05B88EA224BB4F300C3D4E6 /* RTCEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RTCEngine.framework; path = Third/RTCEngine.framework; sourceTree = "<group>"; };
+		B05B88F8224CD1E000C3D4E6 /* YUVMediaDataRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YUVMediaDataRender.h; sourceTree = "<group>"; };
+		B05B88F9224CD1E000C3D4E6 /* YUVMediaDataRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUVMediaDataRender.m; sourceTree = "<group>"; };
+		B060EB7D225F36F6000C2233 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		B060EB7E225F36F6000C2233 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		B0766C83225B58E400D32070 /* VCVideoCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCVideoCapturer.h; sourceTree = "<group>"; };
+		B0766C84225B58E400D32070 /* VCVideoCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCVideoCapturer.m; sourceTree = "<group>"; };
+		B0766C86225C5D1D00D32070 /* OpenCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCamera.h; sourceTree = "<group>"; };
+		B0766C87225C5D2700D32070 /* OpenCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenCamera.m; sourceTree = "<group>"; };
+		B0E2C64122689C10002266C7 /* rtcengine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rtcengine.podspec; path = ../rtcengine.podspec; sourceTree = "<group>"; };
+		B0E2C64322689C1E002266C7 /* rtcengine_osx.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rtcengine_osx.podspec; path = ../rtcengine_osx.podspec; sourceTree = "<group>"; };
+		B0E2C64A226966BC002266C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B0E3FC6A2244AD7200364FFA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		B0E3FC6C2244AD7B00364FFA /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libresolv.9.tbd; sourceTree = DEVELOPER_DIR; };
+		B0E3FC7B2244C0C200364FFA /* RTCStreamOsx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RTCStreamOsx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E3FC9E2244C28200364FFA /* TXLiteAVSDK_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXLiteAVSDK_Mac.framework; path = Third/TXLiteAVSDK_Mac.framework; sourceTree = "<group>"; };
+		B0E56252224DC0F100F518C2 /* RTCEngine-osx-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTCEngine-osx-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E56254224DC0F100F518C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0E56255224DC0F100F518C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0E56257224DC0F100F518C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B0E56258224DC0F100F518C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B0E5625A224DC0F200F518C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0E5625D224DC0F200F518C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0E5625F224DC0F200F518C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E56260224DC0F200F518C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0E56262224DC0F200F518C2 /* RTCEngine_osx_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RTCEngine_osx_app.entitlements; sourceTree = "<group>"; };
+		B0E5628A224DEDCF00F518C2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		B0E5628D224DEDE500F518C2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B0E5628F224DEDEF00F518C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B0E56291224DEDFB00F518C2 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreWLAN.framework; sourceTree = DEVELOPER_DIR; };
+		B0E56293224DEE0900F518C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B0E56295224DEE1900F518C2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		B0E56297224DEE2300F518C2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		B0E56299224DEE3D00F518C2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		B0E5629B224DEE6100F518C2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		B0E5629D224DEE6D00F518C2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B0E5629F224DEE7600F518C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B0E562A1224DEE8000F518C2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		B0E562A3224DF73100F518C2 /* RTCShownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCShownViewController.h; sourceTree = "<group>"; };
+		B0E562A4224DF73100F518C2 /* RTCShownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCShownViewController.m; sourceTree = "<group>"; };
+		B0E562A5224DF73100F518C2 /* RTCShownViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RTCShownViewController.xib; sourceTree = "<group>"; };
+		B0E562A8224DF86C00F518C2 /* RTCEngine-osx-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RTCEngine-osx-app.entitlements"; sourceTree = "<group>"; };
+		B7546F5A91451A95317D03C6 /* Pods_RTCEngine_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCEngine_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3575B86F898810FA36DFBD /* Pods_RTCStream_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCStream_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA27D010ECDA090188868CE6 /* Pods_RTCStream_osx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTCStream_osx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B05B889C224B8ED400C3D4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05B88E8224BAE6400C3D4E6 /* SystemConfiguration.framework in Frameworks */,
+				B05B88E6224BAE5500C3D4E6 /* Accelerate.framework in Frameworks */,
+				B05B88E4224BAE4300C3D4E6 /* CoreMedia.framework in Frameworks */,
+				B05B88E2224BAE3800C3D4E6 /* VideoToolbox.framework in Frameworks */,
+				B05B88E0224BAE2F00C3D4E6 /* AudioToolbox.framework in Frameworks */,
+				B05B88DE224BAE2300C3D4E6 /* CoreTelephony.framework in Frameworks */,
+				B05B88DC224BAE1000C3D4E6 /* AVFoundation.framework in Frameworks */,
+				B05B88DA224BADFB00C3D4E6 /* libc++.tbd in Frameworks */,
+				B05B88D8224BADE500C3D4E6 /* libresolv.tbd in Frameworks */,
+				D8F2DB1E9B309C9FD8FD6376 /* Pods_RTCEngine_ios_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E5624F224DC0F100F518C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E562A2224DEE8000F518C2 /* CoreVideo.framework in Frameworks */,
+				B0E562A0224DEE7600F518C2 /* CoreGraphics.framework in Frameworks */,
+				B0E5629E224DEE6D00F518C2 /* CFNetwork.framework in Frameworks */,
+				B0E5629C224DEE6100F518C2 /* AudioToolbox.framework in Frameworks */,
+				B0E5629A224DEE3D00F518C2 /* VideoToolbox.framework in Frameworks */,
+				B0E56298224DEE2300F518C2 /* CoreMedia.framework in Frameworks */,
+				B0E56296224DEE1900F518C2 /* CoreAudio.framework in Frameworks */,
+				B0E56294224DEE0900F518C2 /* Foundation.framework in Frameworks */,
+				B0E56292224DEDFB00F518C2 /* CoreWLAN.framework in Frameworks */,
+				B0E56290224DEDF000F518C2 /* SystemConfiguration.framework in Frameworks */,
+				B0E5628E224DEDE500F518C2 /* Accelerate.framework in Frameworks */,
+				B0E5628C224DEDDB00F518C2 /* libc++.tbd in Frameworks */,
+				B0E5628B224DEDCF00F518C2 /* libresolv.tbd in Frameworks */,
+				4DBD7F819CF16DC0BC15F970 /* Pods_RTCEngine_osx_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		258488352AAE98011A3AC47F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A279333C47CC377E0C8DB6E8 /* Pods-RTCEngine-ios-app.debug.xcconfig */,
+				472ABDEC58C4DA38DC009C50 /* Pods-RTCEngine-ios-app.release.xcconfig */,
+				71AF3223C53C5C427C893573 /* Pods-RTCEngine-osx-app.debug.xcconfig */,
+				6A388292EBFC8D80BB7AAAA0 /* Pods-RTCEngine-osx-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A35AD18FB49F651C4DA00FCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0E562A1224DEE8000F518C2 /* CoreVideo.framework */,
+				B0E5629F224DEE7600F518C2 /* CoreGraphics.framework */,
+				B0E5629D224DEE6D00F518C2 /* CFNetwork.framework */,
+				B0E5629B224DEE6100F518C2 /* AudioToolbox.framework */,
+				B0E56299224DEE3D00F518C2 /* VideoToolbox.framework */,
+				B0E56297224DEE2300F518C2 /* CoreMedia.framework */,
+				B0E56295224DEE1900F518C2 /* CoreAudio.framework */,
+				B0E56293224DEE0900F518C2 /* Foundation.framework */,
+				B0E56291224DEDFB00F518C2 /* CoreWLAN.framework */,
+				B0E5628F224DEDEF00F518C2 /* SystemConfiguration.framework */,
+				B0E5628D224DEDE500F518C2 /* Accelerate.framework */,
+				B0E5628A224DEDCF00F518C2 /* libresolv.tbd */,
+				B05B88EA224BB4F300C3D4E6 /* RTCEngine.framework */,
+				B05B88E7224BAE6400C3D4E6 /* SystemConfiguration.framework */,
+				B05B88E5224BAE5500C3D4E6 /* Accelerate.framework */,
+				B05B88E3224BAE4300C3D4E6 /* CoreMedia.framework */,
+				B05B88E1224BAE3800C3D4E6 /* VideoToolbox.framework */,
+				B05B88DF224BAE2F00C3D4E6 /* AudioToolbox.framework */,
+				B05B88DD224BAE2300C3D4E6 /* CoreTelephony.framework */,
+				B05B88DB224BAE1000C3D4E6 /* AVFoundation.framework */,
+				B05B88D9224BADFB00C3D4E6 /* libc++.tbd */,
+				B05B88D7224BADE400C3D4E6 /* libresolv.tbd */,
+				B0E3FC9E2244C28200364FFA /* TXLiteAVSDK_Mac.framework */,
+				B0E3FC6C2244AD7B00364FFA /* libresolv.9.tbd */,
+				B0E3FC6A2244AD7200364FFA /* libc++.tbd */,
+				68BAA6F060003651865681EB /* Pods_RTCStream.framework */,
+				BC3575B86F898810FA36DFBD /* Pods_RTCStream_ios.framework */,
+				15EDA72B4CA2DFE4A244BF43 /* Pods_RTCSTream_osx.framework */,
+				6F118FB7ACBD6A719A0A3449 /* Pods_RTCStreamOsx.framework */,
+				023E0565A8E40DB3911550A9 /* Pods_RTCStream_osx_app.framework */,
+				FA27D010ECDA090188868CE6 /* Pods_RTCStream_osx.framework */,
+				834A0FB8403F330221944ED7 /* Pods_RTCEngine.framework */,
+				27CD33725C02B98E1E6B529E /* Pods_RTCEngine_ios_app.framework */,
+				763B9C70F9C679E128D935C9 /* Pods_RTCEngine_osx_app.framework */,
+				B7546F5A91451A95317D03C6 /* Pods_RTCEngine_osx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B05B88A0224B8ED400C3D4E6 /* RTCEngine-ios-app */ = {
+			isa = PBXGroup;
+			children = (
+				B0766C83225B58E400D32070 /* VCVideoCapturer.h */,
+				B0766C84225B58E400D32070 /* VCVideoCapturer.m */,
+				B0766C86225C5D1D00D32070 /* OpenCamera.h */,
+				B0766C87225C5D2700D32070 /* OpenCamera.m */,
+				B05B88A1224B8ED400C3D4E6 /* AppDelegate.h */,
+				B05B88A2224B8ED400C3D4E6 /* AppDelegate.m */,
+				B05B88A4224B8ED400C3D4E6 /* ViewController.h */,
+				B05B88A5224B8ED400C3D4E6 /* ViewController.m */,
+				B05B88A7224B8ED400C3D4E6 /* Main.storyboard */,
+				B05B88AA224B8ED500C3D4E6 /* Assets.xcassets */,
+				B05B88AC224B8ED500C3D4E6 /* LaunchScreen.storyboard */,
+				B05B88AF224B8ED500C3D4E6 /* Info.plist */,
+				B05B88B0224B8ED500C3D4E6 /* main.m */,
+				B05B88D4224B995000C3D4E6 /* RTCEngineViewController.h */,
+				B05B88D5224B995000C3D4E6 /* RTCEngineViewController.m */,
+				B05B88F8224CD1E000C3D4E6 /* YUVMediaDataRender.h */,
+				B05B88F9224CD1E000C3D4E6 /* YUVMediaDataRender.m */,
+			);
+			path = "RTCEngine-ios-app";
+			sourceTree = "<group>";
+		};
+		B060EB81225F36FE000C2233 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B060EB7E225F36F6000C2233 /* CoreDataManager.m */,
+				B060EB7D225F36F6000C2233 /* CoreDataManager.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		B0E56253224DC0F100F518C2 /* RTCEngine-osx-app */ = {
+			isa = PBXGroup;
+			children = (
+				B0E562A8224DF86C00F518C2 /* RTCEngine-osx-app.entitlements */,
+				B0E56254224DC0F100F518C2 /* AppDelegate.h */,
+				B0E56255224DC0F100F518C2 /* AppDelegate.m */,
+				B0E56257224DC0F100F518C2 /* ViewController.h */,
+				B0E56258224DC0F100F518C2 /* ViewController.m */,
+				B0E5625A224DC0F200F518C2 /* Assets.xcassets */,
+				B0E5625C224DC0F200F518C2 /* Main.storyboard */,
+				B0E5625F224DC0F200F518C2 /* Info.plist */,
+				B0E56260224DC0F200F518C2 /* main.m */,
+				B0E56262224DC0F200F518C2 /* RTCEngine_osx_app.entitlements */,
+				B0E562A3224DF73100F518C2 /* RTCShownViewController.h */,
+				B0E562A4224DF73100F518C2 /* RTCShownViewController.m */,
+				B0E562A5224DF73100F518C2 /* RTCShownViewController.xib */,
+			);
+			path = "RTCEngine-osx-app";
+			sourceTree = "<group>";
+		};
+		F012F8CA22141D3F0011F695 = {
+			isa = PBXGroup;
+			children = (
+				B0E2C64A226966BC002266C7 /* README.md */,
+				B0E2C64122689C10002266C7 /* rtcengine.podspec */,
+				B0E2C64322689C1E002266C7 /* rtcengine_osx.podspec */,
+				B060EB81225F36FE000C2233 /* common */,
+				B05B88A0224B8ED400C3D4E6 /* RTCEngine-ios-app */,
+				B0E56253224DC0F100F518C2 /* RTCEngine-osx-app */,
+				F012F8D422141D3F0011F695 /* Products */,
+				A35AD18FB49F651C4DA00FCB /* Frameworks */,
+				258488352AAE98011A3AC47F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F012F8D422141D3F0011F695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0E3FC7B2244C0C200364FFA /* RTCStreamOsx.framework */,
+				B05B889F224B8ED400C3D4E6 /* RTCEngine-ios-app.app */,
+				B05B88B6224B8ED500C3D4E6 /* RTCEngine-ios-appTests.xctest */,
+				B0E56252224DC0F100F518C2 /* RTCEngine-osx-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B05B889E224B8ED400C3D4E6 /* RTCEngine-ios-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B05B88CE224B8ED500C3D4E6 /* Build configuration list for PBXNativeTarget "RTCEngine-ios-app" */;
+			buildPhases = (
+				A08409D0AE587969ABB87EE5 /* [CP] Check Pods Manifest.lock */,
+				B05B889B224B8ED400C3D4E6 /* Sources */,
+				B05B889C224B8ED400C3D4E6 /* Frameworks */,
+				B05B889D224B8ED400C3D4E6 /* Resources */,
+				A7CA50EEE9754D5C3F9ECDF9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RTCEngine-ios-app";
+			productName = "RTCEngine-ios-app";
+			productReference = B05B889F224B8ED400C3D4E6 /* RTCEngine-ios-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0E56251224DC0F100F518C2 /* RTCEngine-osx-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E5627F224DC0F300F518C2 /* Build configuration list for PBXNativeTarget "RTCEngine-osx-app" */;
+			buildPhases = (
+				9EDAB7B699FA53605BCF1C7D /* [CP] Check Pods Manifest.lock */,
+				B0E5624E224DC0F100F518C2 /* Sources */,
+				B0E5624F224DC0F100F518C2 /* Frameworks */,
+				B0E56250224DC0F100F518C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RTCEngine-osx-app";
+			productName = "RTCEngine-osx-app";
+			productReference = B0E56252224DC0F100F518C2 /* RTCEngine-osx-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F012F8CB22141D3F0011F695 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = RTCEngine;
+				TargetAttributes = {
+					B05B889E224B8ED400C3D4E6 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B0E56251224DC0F100F518C2 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F012F8CE22141D3F0011F695 /* Build configuration list for PBXProject "RTCStream-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F012F8CA22141D3F0011F695;
+			productRefGroup = F012F8D422141D3F0011F695 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B05B889E224B8ED400C3D4E6 /* RTCEngine-ios-app */,
+				B0E56251224DC0F100F518C2 /* RTCEngine-osx-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B05B889D224B8ED400C3D4E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E2C64B226966BC002266C7 /* README.md in Resources */,
+				B0E2C64222689C10002266C7 /* rtcengine.podspec in Resources */,
+				B0E2C64422689C1E002266C7 /* rtcengine_osx.podspec in Resources */,
+				B05B88AE224B8ED500C3D4E6 /* LaunchScreen.storyboard in Resources */,
+				B05B88AB224B8ED500C3D4E6 /* Assets.xcassets in Resources */,
+				B05B88A9224B8ED400C3D4E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E56250224DC0F100F518C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E562A7224DF73100F518C2 /* RTCShownViewController.xib in Resources */,
+				B0E5625B224DC0F200F518C2 /* Assets.xcassets in Resources */,
+				B0E5625E224DC0F200F518C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EDAB7B699FA53605BCF1C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTCEngine-osx-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08409D0AE587969ABB87EE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTCEngine-ios-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CA50EEE9754D5C3F9ECDF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTCEngine-ios-app/Pods-RTCEngine-ios-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTCEngine-ios-app/Pods-RTCEngine-ios-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTCEngine-ios-app/Pods-RTCEngine-ios-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B05B889B224B8ED400C3D4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0766C85225B58E400D32070 /* VCVideoCapturer.m in Sources */,
+				B05B88FA224CD1E000C3D4E6 /* YUVMediaDataRender.m in Sources */,
+				B060EB7F225F36F6000C2233 /* CoreDataManager.m in Sources */,
+				B05B88D6224B995000C3D4E6 /* RTCEngineViewController.m in Sources */,
+				B05B88A6224B8ED400C3D4E6 /* ViewController.m in Sources */,
+				B05B88B1224B8ED500C3D4E6 /* main.m in Sources */,
+				B0766C88225C5D2700D32070 /* OpenCamera.m in Sources */,
+				B05B88A3224B8ED400C3D4E6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E5624E224DC0F100F518C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E56259224DC0F100F518C2 /* ViewController.m in Sources */,
+				B0E56261224DC0F200F518C2 /* main.m in Sources */,
+				B060EB80225F36F6000C2233 /* CoreDataManager.m in Sources */,
+				B0E562A6224DF73100F518C2 /* RTCShownViewController.m in Sources */,
+				B0E56256224DC0F100F518C2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B05B88A7224B8ED400C3D4E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B05B88A8224B8ED400C3D4E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B05B88AC224B8ED500C3D4E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B05B88AD224B8ED500C3D4E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B0E5625C224DC0F200F518C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E5625D224DC0F200F518C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B05B88C8224B8ED500C3D4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A279333C47CC377E0C8DB6E8 /* Pods-RTCEngine-ios-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third",
+				);
+				INFOPLIST_FILE = "RTCEngine-ios-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$CONFIGURATION_BUILD_DIR/AFNetworking\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "xes.clound.RTCEngine-ios-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B05B88C9224B8ED500C3D4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 472ABDEC58C4DA38DC009C50 /* Pods-RTCEngine-ios-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third",
+				);
+				INFOPLIST_FILE = "RTCEngine-ios-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$CONFIGURATION_BUILD_DIR/AFNetworking\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "xes.clound.RTCEngine-ios-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0E56279224DC0F300F518C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71AF3223C53C5C427C893573 /* Pods-RTCEngine-osx-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RTCEngine-osx-app/RTCEngine-osx-app.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				INFOPLIST_FILE = "RTCEngine-osx-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "xes.clound.RTCEngine-osx-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0E5627A224DC0F300F518C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A388292EBFC8D80BB7AAAA0 /* Pods-RTCEngine-osx-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RTCEngine-osx-app/RTCEngine-osx-app.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				INFOPLIST_FILE = "RTCEngine-osx-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "xes.clound.RTCEngine-osx-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F012F8E722141D400011F695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F012F8E822141D400011F695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B05B88CE224B8ED500C3D4E6 /* Build configuration list for PBXNativeTarget "RTCEngine-ios-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05B88C8224B8ED500C3D4E6 /* Debug */,
+				B05B88C9224B8ED500C3D4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E5627F224DC0F300F518C2 /* Build configuration list for PBXNativeTarget "RTCEngine-osx-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E56279224DC0F300F518C2 /* Debug */,
+				B0E5627A224DC0F300F518C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F012F8CE22141D3F0011F695 /* Build configuration list for PBXProject "RTCStream-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F012F8E722141D400011F695 /* Debug */,
+				F012F8E822141D400011F695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F012F8CB22141D3F0011F695 /* Project object */;
+}

@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+
+use_frameworks!
+
+target 'RTCEngine-ios-app' do
+  platform :ios, '9.0'
+
+#	pod 'RTCEngine', :git => 'https://git.100tal.com/wangxiao_yunpingtai_rtc/rtcengine-ios-release.git',:branch => 'for-agora-audio-test'
+	pod 'RTCEngine', :git => 'https://github.com/zhangyafei1108/rtcengine-release-ios.git'
+end
+
+target 'RTCEngine-osx-app' do
+  platform :osx, '10.10'
+  #pod 'RTCEngine_osx', :git => 'https://git.100tal.com/wangxiao_yunpingtai_rtc/rtcengine-ios-release.git'
+end
+
